@@ -1,5 +1,5 @@
 fn main() {
-    for x in 1..100 {
+    for x in 1..=100 {
         fizz_buzz(x);
     }
 }
