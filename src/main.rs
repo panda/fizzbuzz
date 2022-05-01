@@ -5,13 +5,10 @@ fn main() {
 }
 
 fn fizz_buzz(x: i32) {
-    if x % 3 == 0 && x % 5 == 0 {
-        println!("fizzbuzz");
-    } else if x % 3 == 0 {
-        println!("fizz");
-    } else if x % 5 == 0 {
-        println!("buzz");
-    } else {
-        println!("{}", x);
+    match x {
+        x if x % 3 == 0 && x % 5 == 0 => println!("fizzbuzz"),
+        x if x % 3 == 0 => println!("fizz"),
+        x if x % 5 == 0 => println!("buzz"),
+        _ => println!("{}", x),
     }
 }
