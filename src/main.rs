@@ -5,7 +5,7 @@ fn main() {
 }
 
 fn fizz_buzz(x: i32) {
-    if x % 15 == 0 {
+    if x % 3 == 0 && x % 5 == 0 {
         println!("fizzbuzz");
     } else if x % 3 == 0 {
         println!("fizz");
